@@ -4,7 +4,7 @@
 		"details": [
 			{
 				"appID": "8P7D98X3WR.com.galdahan.PodApp",
-				"paths": [ "*"]
+				"paths": ["/user/*", "/pod/*"]
 			}
 		]
 	}
