@@ -18,7 +18,7 @@
   --smaller-font-size: 0.75rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
   :root {
     --bigger-font-size: 4.5rem;
     --big-font-size: 2.5rem;
@@ -102,7 +102,7 @@ img {
           align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;
     top: -100%;
@@ -140,8 +140,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--first-color);
-  font-weight: 700;
+  width: 44px
 }
 
 .nav__toggle {
@@ -194,10 +193,12 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.home__actions::after {
-  content: "";
-  clear: both;
-  display: table;
+.home__actions {
+  margin-left: auto;
+}
+
+.store__action {
+  height: 40px
 }
 
 .home__img {
@@ -219,7 +220,7 @@ img {
 
 
 /*----- MEDIA QUERIES -----*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
   body {
     margin: 0;
   }
@@ -261,6 +262,7 @@ img {
         -ms-grid-row-align: center;
         align-self: center;
     text-align: initial;
+    padding-top: 3.5rem;
   }
   .home__description {
     padding: 0 5rem 0 0;
