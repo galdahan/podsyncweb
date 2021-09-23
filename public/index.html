@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <base href="/">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -10,25 +11,13 @@
     <body>
         <!-- HEADER -->
         <header class="l-header">
-            <nav class="nav bd-grid">
-                <a href="index.html" class="nav__logo">
-                    <img src="assets/img/podsync-transparent.png">
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="privacy-policy.txt" class="nav__link">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__actions">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <img src="assets/icons/bx-chevron-down.svg" alt="">
+            <div id="banner" class="banner">
+                <div class="banner__content">
+                    <div id="banner_text" class="banner__text">
+                        To view the requested page you must download the app.
                     </div>
-                    <a id="contact" href="mailto:podsyncapp@gmail.com" class="nav__btn">Contact</a>
                 </div>
-            </nav>
+            </div>
         </header>
 
         <!-- HOME -->
@@ -36,10 +25,11 @@
             <section class="home">
                 <div class="home__data">
                     <h1 class="home__title">The Social Calender</h1>
-                    <p class="home__description">Podsync is a <b>fast</b>, <b>efficient</b> and <b>fun</b> way to directly setting and syncing events/ tasks/ memories with other pepole schedules. 
+                    <p class="home__description">
+                        Podsync is a <b>fast</b>, <b>efficient</b> and <b>fun</b> way to directly setting and syncing events/ tasks/ moments with other pepole schedules. 
                         <br>
-                        <br>Get the app.</p>
-                    
+                        <br>Get the app.
+                    </p>
                     <div class="home__actions">
                         <a href="https://apps.apple.com/gb/app/podsync/id1478300808">
                             <img src="assets/img/app-store.svg" class="store__action">
@@ -50,12 +40,41 @@
     
                 <div class="home__img">
                     <!-- IMG -->
-                    <img src="assets/img/screen-shot.png" class="screenshot">
+                    <img src="assets/img/screen-shot.png" alt="" class="iphone">
                 </div>
-
             </section>
-            
+
+            <!-- DETAILS -->
+            <section class="l-section" id="l-section">
+                <div class="details">
+                    <div class="details__content">
+                        <div class="details__box">
+                            <h3 class="details__title">Set</h3>
+                            <p class="details__description">events for yourself<br> and others' schedules</p>
+                        </div>
+                        <div class="details__box">
+                            <h3 class="details__title">Sync</span></h3>
+                            <p class="details__description">with the participants<br> chat, media & more</p>
+                        </div>
+                        <div class="details__box">
+                            <h3 class="details__title">Share</h3>
+                            <p class="details__description">to the world or<br> join existing ones</p>
+                        </div>
+                    </div>
+
+                    <div class="details__img">
+                        <img src="assets/img/small-pod.png" alt="" class="small-pod">
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <div class="nav__actions">
+                <a href="privacy-policy.txt" class="nav__btn">Privacy Policy</a>
+                <a href="mailto:podsyncapp@gmail.com" class="nav__btn">Contact</a>
+            </div>
+        </footer>
 
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
