@@ -1,92 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <base href="/">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" href="assets/img/podsync-icon.png">
-        <title>Podsync</title>
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header class="l-header">
-            <div id="banner" class="banner">
-                <div class="banner__content">
-                    <div id="banner_text" class="banner__text">
-                        To view the requested page you must download the app.
-                    </div>
-                </div>
-            </div>
-        </header>
 
-        <!-- HOME -->
-        <main class="l-main bd-grid">
-            <section class="home">
-                <div class="home__data">
-                    <h1 class="home__title">The Social Calender</h1>
-                    <p class="home__description">
-                        Podsync is a <b>fast</b>, <b>efficient</b> and <b>fun</b> way to directly setting and syncing events/ tasks/ moments with other pepole schedules. 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" /> 
+    <link rel="icon" href="./img/podsync-icon.png" />
+    <title>Podsync</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo-icon" src="./img/podsync-transparent.png" alt="logo" />
+            <h4 class="logo-text">Podsync</h4>
+        </div>
+    </header>
+
+    <main>
+        <div id="banner" class="banner">
+            <div id="banner-text" class="banner-text">
+                <p>To view the requested page you must download the app.</p>
+            </div>
+        </div>
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>The Social Calender</h1>
+                    <p>
+                        Podsync is a <b>fast</b>, <b>efficient</b> and <b>fun</b> way to directly setting and syncing
+                        events/ tasks/ moments with other pepole schedules.
                         <br>
                         <br>Get the app.
                     </p>
-                    <div class="home__actions">
-                        <a href="https://apps.apple.com/gb/app/podsync/id1478300808">
-                            <img src="assets/img/app-store.svg" class="store__action">
-                        </a>
-                        <img src="assets/img/play-store.svg" class="store__action">
-                    </div>
                 </div>
-    
-                <div class="home__img">
-                    <!-- IMG -->
-                    <img src="assets/img/screen-shot.png" alt="" class="iphone">
+                <div class="cta">
+                    <a href="https://apps.apple.com/gb/app/podsync/id1478300808">
+                        <img class="cta-link" src="img/app-store.svg" alt="app-store">
+                    </a>
+                    <img class="cta-link" src="img/play-store.svg" alt="play-store">
                 </div>
-            </section>
-
-            <!-- DETAILS -->
-            <section class="l-section" id="l-section">
-                <div class="details">
-                    <div class="details__content">
-                        <div class="details__box">
-                            <h3 class="details__title">Set</h3>
-                            <p class="details__description">events for yourself<br> and others' schedules</p>
-                        </div>
-                        <div class="details__box">
-                            <h3 class="details__title">Sync</span></h3>
-                            <p class="details__description">with the participants<br> chat, media & more</p>
-                        </div>
-                        <div class="details__box">
-                            <h3 class="details__title">Share</h3>
-                            <p class="details__description">to the world or<br> join existing ones</p>
-                        </div>
-                    </div>
-
-                    <div class="details__img">
-                        <img src="assets/img/small-pod.png" alt="" class="small-pod">
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="nav__actions">
-                <a href="privacy-policy.txt" class="nav__btn">Privacy Policy</a>
-                <a href="mailto:podsyncapp@gmail.com" class="nav__btn">Contact</a>
             </div>
-        </footer>
+            <div class="cover">
+                <img src="./img/screen-shot.png" alt="screen-shot" />
+            </div>
+        </section>
+    </main>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="./privacy-policy.txt">Privacy Policy</a></li>
+                <li><a class="nav-link" href="mailto:podsyncapp@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 
-        <!-- TIMELINE MAX -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="./main.js"></script>
+</body>
 
-        <!-- SCROLLMAGIC -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
-        
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
