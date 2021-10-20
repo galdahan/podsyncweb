@@ -28,6 +28,7 @@ header, footer {
 	font-size: 18px;
 	background: linear-gradient(to left, #3ec6fd, #038efd);
 	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 nav {
