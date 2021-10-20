@@ -64,6 +64,15 @@ nav {
 	margin: auto;
 	align-items: center;
 }
+.presentation-business {
+	display: grid;
+	width: 50%;
+	margin: auto;
+	align-items: center;
+}
+.introduction-business {
+	flex: 1;
+}
 .introduction {
 	flex: 1;
 }
@@ -91,9 +100,26 @@ nav {
 .cover img {
 	height: 700px;
 }
+.cover-business {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.cover-business img {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+.img-screenshot {
+	width: 40%;
+	border: .5px solid rgba(0,0,0,.1);
+	border-radius: 20px;
+}
+.img-model {
+	width: 100%;
+}
 
 @media screen and (max-width: 1024px) {
-	header, footer, .presentation, .banner {
+	header, footer, .presentation, .banner, .presentation-business {
 		width: 90%;
 	}
 	.presentation {
